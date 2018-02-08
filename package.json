@@ -1,0 +1,33 @@
+{
+  "name": "Avra-token-test-app",
+  "version": "1.0.0",
+  "description": "simple demo app",
+  "main": "server.js",
+  "repository": "",
+  "author": "yohoho",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app",
+    "watch": "nodemon app && mongod",
+    "dev": "export NODE_ENV=dev && nodemon server.js",
+    "test": "mocha --timeout 1000 --exit"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.1",
+    "connect-mongo": "^1.3.2",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "mongoose": "^4.9.8",
+    "nodemon": "^1.11.0",
+    "mocha": "^5.0.0",
+    "ejs": "^2.5.7"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "nodemon": "^1.14.12",
+    "truffle-contract": "^1.1.11",
+    "web3": "github:ethereum/web3.js"
+  }
+}

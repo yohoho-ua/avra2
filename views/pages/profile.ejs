@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+    <div class="container">
+
+        <h1>Wallet Demo</h1> 
+        <h2>Hi, <span style="font-weight: bold"><%= user.username %></span></h1> 
+    
+        <h2>Your address: <span style="font-weight: bold"><%= wallets[0].public %></span></h2>
+        <h2>Balance: <span style="font-weight: bold"><%= wallets[0].balance %></span></h2>
+    
+        <div>
+            <button id="btnGenerate" onclick="App.generateAddress()">Get address</button>
+        </div>
+     
+       
+        <br><br>
+        <span id="status"></span>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
